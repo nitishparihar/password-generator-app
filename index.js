@@ -18,11 +18,6 @@ function generateString(length) {
 }
 
 
-//function keyUp() {
-//   passwordLength.textContent = (event.target.value)
-//}
-
-
 function generatePasswords() {
     pass1.textContent = generateString(10)
     pass2.textContent = generateString(10)
@@ -31,4 +26,26 @@ function generatePasswords() {
 }
 
 
-//Math.random().toString(36).slice(2)
+function copyPassword() {
+  let copyText = document.getElementById("password1");
+  navigator.clipboard.writeText(copyText.innerHTML);
+  if (copyText != "") {alert("Password Copied Successfully")}
+}
+
+function copyPassword1() {
+    let copyText = document.getElementById("password2");
+    navigator.clipboard.writeText(copyText.innerHTML);
+    alert("Password Copied Successfully")
+}
+
+function copyPassword2() {
+    let copyText = document.getElementById("password3");
+    navigator.clipboard.writeText(copyText.innerHTML);
+    alert("Password Copied Successfully")
+}
+
+function copyPassword3() {
+    let copyText = document.getElementById("password4");
+    navigator.clipboard.writeText(copyText.innerHTML);
+    alert("Password Copied Successfully")
+}
