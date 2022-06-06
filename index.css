@@ -4,11 +4,11 @@ body {
 }
 
 .main-container {
-    width: 490px;
-    height: 490px;
+    width: 500px;
+    height: 500px;
     background: #1F2937;
     text-align: center;
-    margin: 30px auto;
+    margin: 20px auto;
     padding: 20px 30px;
     border-radius: 10px;
 }
@@ -40,7 +40,7 @@ input {
 .btn {
     margin-top: 30px;
     color: #FFFFFF;
-    padding-top: 6px;
+    padding-top: 5px;
     padding-bottom: 9px;
     padding-right: 20px;
     padding-left: 15px;
@@ -52,6 +52,7 @@ input {
 
 .btn:hover {
     cursor: pointer;
+    background-color: darkgreen;
 }
 
 .btn-bolt {
@@ -89,4 +90,16 @@ input {
     cursor: auto;
 }
 
+.copy-btn {
+    width: 200px;
+    height: 40px;
+    border-radius: 6px;
+    border: none;
+    background: #10B981;
+    color: white;
+}
 
+.copy-btn:hover {
+    cursor: pointer;
+    background-color: darkgreen;
+}
