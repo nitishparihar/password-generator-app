@@ -5,12 +5,18 @@ body {
 
 .main-container {
     width: 500px;
-    height: 500px;
+    height: 550px;
     background: #1F2937;
     text-align: center;
-    margin: 20px auto;
-    padding: 20px 30px;
+    margin: 5px auto;
+    padding: 10px 30px;
     border-radius: 10px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .heading {
@@ -23,22 +29,21 @@ body {
 }
 
 .para {
-    margin-top: -5px;
-    color: #D5D4D8
+    color: #D5D4D8;
+    margin: 5px 0 25px 0px;
 }
 
-input {
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 5px;
-    width: 145px;
-    text-align: end;
-    margin-top: 15px;
-    background: beige;
+#input-box {
+    padding: 0.5rem;
+    border: 3px solid #10B981;
+    border-radius: 50px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 .btn {
-    margin-top: 30px;
+    margin-top: 10px;
     color: #FFFFFF;
     padding-top: 5px;
     padding-bottom: 9px;
@@ -64,7 +69,7 @@ input {
 
 .line {
     margin-top: 30px;
-    width: 446px;
+    width: 100%;
     border: 1px solid #2F3E53;
 }
 
@@ -74,6 +79,7 @@ input {
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
     grid-column-gap: 0px;
+    
 }
 
 .password-box {
@@ -82,7 +88,7 @@ input {
     width: 200px;
     height: 40px;
     line-height: 39px;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
 .password-box:hover {
@@ -96,7 +102,7 @@ input {
     border: none;
     background: #10B981;
     color: white;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
 .copy-btn:hover {
