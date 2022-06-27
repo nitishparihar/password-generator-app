@@ -82,8 +82,7 @@ input {
     width: 200px;
     height: 40px;
     line-height: 39px;
-    margin-left: auto;
-    margin-right: auto;
+    margin:0 auto;
 }
 
 .password-box:hover {
@@ -97,6 +96,7 @@ input {
     border: none;
     background: #10B981;
     color: white;
+    margin:0 auto;
 }
 
 .copy-btn:hover {
