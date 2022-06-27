@@ -1,19 +1,21 @@
 <html>
     <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
         <link rel="stylesheet" href="index.css">
-        <title>Password Generator</title>
+        <title>Password Generator App</title>
+        <link rel="icon" type="image/png" href="bolt.png">
     </head>
     <body>
         <div class="main-container">
             <div class="first-container">
                 <h1 class="heading">Generate a <span class="random">random password</span></h1>
                 <p class="para">Never use an insecure password again</p>
-                <!-- <input type="number" placeholder="Password length?" onkeyup="keyUp()"/> -->
-                <!-- <p id="a"></p> -->
-                <br>
-                <button class="btn" onclick="generatePasswords()"> 
+                <div class="input-container">
+                    <input id="input-box" type="number"placeholder="Max value 15"/>
+                    <button class="btn" onclick="generatePasswords()"> 
                     <img class="btn-bolt" src="bolt.png">Generate passwords
-                </button>
+                    </button>
+                </div>
                 <hr class="line">
             </div>
         
