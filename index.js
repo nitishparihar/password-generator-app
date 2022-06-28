@@ -20,6 +20,10 @@ function generateString(length) {
 function generatePasswords() {
     if (inputBox.value > 15) {
         alert("Please enter value less than or equal to 15")
+        pass1.textContent = ""
+        pass2.textContent = ""
+        pass3.textContent = ""
+        pass4.textContent = ""
     } else {
         pass1.textContent = generateString(inputBox.value)
         pass2.textContent = generateString(inputBox.value)
@@ -30,25 +34,37 @@ function generatePasswords() {
 
 
 function copyPassword() {
-  let copyText = document.getElementById("password1");
-  navigator.clipboard.writeText(copyText.innerHTML);
-  if (copyText.innerHTML != "") {alert("Password Copied Successfully")}
+    if (pass1.innerHTML === "") {
+        alert("Please generate password")
+      } else {
+        navigator.clipboard.writeText(pass1.innerHTML);
+        alert("Password Copied Successfully")
+      }
 }
 
 function copyPassword1() {
-    let copyText = document.getElementById("password2");
-    navigator.clipboard.writeText(copyText.innerHTML);
-    if (copyText.innerHTML != "") {alert("Password Copied Successfully")}
+    if (pass2.innerHTML === "") {
+        alert("Please generate password")
+      } else {
+        navigator.clipboard.writeText(pass2.innerHTML);
+        alert("Password Copied Successfully")
+      }
 }
 
 function copyPassword2() {
-    let copyText = document.getElementById("password3");
-    navigator.clipboard.writeText(copyText.innerHTML);
-    if (copyText.innerHTML != "") {alert("Password Copied Successfully")}
+    if (pass3.innerHTML === "") {
+        alert("Please generate password")
+      } else {
+        navigator.clipboard.writeText(pass3.innerHTML);
+        alert("Password Copied Successfully")
+      }
 }
 
 function copyPassword3() {
-    let copyText = document.getElementById("password4");
-    navigator.clipboard.writeText(copyText.innerHTML);
-    if (copyText.innerHTML != "") {alert("Password Copied Successfully")}
+    if (pass4.innerHTML === "") {
+        alert("Please generate password")
+      } else {
+        navigator.clipboard.writeText(pass4.innerHTML);
+        alert("Password Copied Successfully")
+      }
 }
