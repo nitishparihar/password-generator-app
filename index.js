@@ -18,7 +18,9 @@ function generateString(length) {
 
 
 function generatePasswords() {
-    if (inputBox.value > 15) {
+    if (inputBox.value === "") {
+        alert("Please enter value first")
+    } else if (inputBox.value > 15) {
         alert("Please enter value less than or equal to 15")
         pass1.textContent = ""
         pass2.textContent = ""
