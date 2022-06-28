@@ -4,7 +4,7 @@ body {
 }
 
 .main-container {
-    width: 500px;
+    max-width: 500px;
     height: 550px;
     background: #1F2937;
     text-align: center;
